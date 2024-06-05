@@ -1,6 +1,23 @@
+body {
+    background-color: rgb(162, 182, 199);
+    animation-duration: 20s;
+    animation: viadinho 1s infinite;
+}
+
+img {
+    box-sizing: border-box;
+    width: 1000px;
+    height: 540px;
+    animation-duration: 20s;
+    margin: 25px;
+    /* animation: aumento-pau 0.5s infinite; */
+     /* animation: zoom 1s infinite;  */
+}
+
 .div-title,
 .div-ingredients,
 .div-recipe {
+    box-sizing: border-box;
     margin: auto 50px;
     text-align: center;
 }
@@ -19,10 +36,102 @@
     color: rgb(0, 0, 0);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: rgb(246, 173, 248);
+    font-size: 20px;
 
 }
 
 .centered-list {
+    box-sizing: border-box;
+    width: 25%;
     display: inline-block;
     text-align: left;
+    background-color: aliceblue;
+}
+
+.div-recipe {
+    background-color: brown;
+    text-shadow: 100cap;
+}
+
+@keyframes viadinho {
+    0% {
+         background-color: rgb(60, 255, 42);
+    }
+
+    20%{
+        background-color: rgb(139, 34, 34);
+    }
+
+    40%{
+        background-color: rgb(28, 145, 255);
+    }
+    60%{
+        background-color: rgb(43, 17, 156);
+    }
+    80%{
+        background-color: rgb(252, 206, 0);
+    }
+
+    100% {
+        background-color: rgb(249, 84, 255);
+    }
+}
+
+@keyframes aumento-pau {
+    0%{
+        height: 100px;
+        width: 100px;
+    }
+    20% {
+        height: 200px;
+        width: 200px;
+    }
+    40% {
+        height: 300px;
+        width: 300px;
+    }
+
+    50%{
+        height: 350px;
+        width: 350px;
+    }
+
+    60%{
+        height: 400px;
+        width: 400px;
+    }
+
+    80%{
+        width: 500px;
+        height: 500px;
+    }
+
+    90%{
+        width: 550px;
+        height: 550px;
+    }
+
+    100%{
+        width: 600px;
+        height: 600px;
+    }
+}
+
+
+@keyframes zoom{
+
+    25%{
+        translate: 100px 20px;
+    }
+
+    50%{
+        translate: 150px 50px;
+    }
+    75%{
+        translate: -200px -100px
+    }
+
+    100%{
+        translate: 50px 400px
+    }
 }
